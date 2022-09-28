@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+</style>
+<body>
+<% 
+class Path {
+	String pathStr;
+	Path () {
+		pathStr="path";
+	}
+	
+	public void setPathStr (String path) {
+		pathStr = path;
+	}
+}
+Path path = new Path();
+%>
+<jsp:include page="header.jsp" />
+<button onclick={pageMove('login')}></button>
+<jsp:include page="footer.jsp" />
+</body>
+<script>
+let pagePath = "path"
+const pageMove = (str) => {
+	pagePath = str
+	<% path.setPathStr(%> pagePath <%); %>
+}
+</script>
+</html>

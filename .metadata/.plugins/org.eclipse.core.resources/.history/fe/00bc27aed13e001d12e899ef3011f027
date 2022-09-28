@@ -1,0 +1,32 @@
+package jdbc;
+
+import java.sql.*;
+import utill.DBUtil;
+import java.util.Vector;
+
+public class JDBCstudy {
+	Statement stmt;
+	Vector<String> list = new Vector<>();
+	
+	JDBCstudy () {
+		try {
+			ResultSet rs = null;
+			String[] keyArr = {"empno","ename"};
+			stmt = DBUtil.getConnection("scott","tiger").createStatement();
+			rs = stmt.executeQuery("select * from emp");
+			while (rs.next()) {
+				for (String key : keyArr) {
+					list.add(key + ": " + rs.getString(key) + "   ");
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public ArrayList<String> getList () {
+		return list;
+	}
+	
+}

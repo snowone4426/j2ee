@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="dto.Product" %>
+<jsp:useBean id="productList" class="dao.ProductRepasitory" scope="session" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="welcome.css" />
+<title>상품 상세</title>
+</head>
+<body>
+
+<%@ include file= "menu.jsp" %>
+<main>
+<section>
+상품목록
+</section>
+<section class="body">
+<% 
+String id = request.getParameter("id");
+Product p = productList.getProductById(id);
+%>
+
+</section>
+</main>
+<%@ include file= "footer.jsp" %>
+</body>
+</html>

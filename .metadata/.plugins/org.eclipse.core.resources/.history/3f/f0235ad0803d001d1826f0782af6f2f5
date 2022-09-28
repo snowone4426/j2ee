@@ -1,0 +1,22 @@
+<style>
+</style>
+<% 
+boolean isLogin = false;
+String loginId = "";
+String loginPassword = "";
+%>
+<header>
+<div>Logo</div>
+<nav>
+<ul>
+<% if(isLogin == true) {%> 
+<li>
+로그아웃
+</li>
+<li>마이페이지</li>
+<%} else { %>
+<li>로그인</li>
+<%} %>
+</ul>
+</nav>
+</header>

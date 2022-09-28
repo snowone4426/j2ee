@@ -1,0 +1,6 @@
+package login;
+
+public class LoginInfo {
+	private String id;
+	private String password;
+}

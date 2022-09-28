@@ -1,0 +1,26 @@
+package jdbc;
+
+import java.sql.*;
+import utill.DBUtil;
+import java.util.Vector;
+
+public class JDBCstudy {
+	Statement stmt = null;
+	Vector<String> list = new Vector<>();
+	ResultSet rs = null;
+	
+	public JDBCstudy () {
+		try {
+			stmt = DBUtil.getConnection("scott","tiger").createStatement();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				stmt.close();
+				DBUtil.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+	}
+}

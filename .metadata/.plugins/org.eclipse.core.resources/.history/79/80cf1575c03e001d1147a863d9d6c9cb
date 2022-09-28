@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<style>
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+.navContainer {
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	background-color: #353A40;
+}
+.logo{
+	font-size: 40px;
+	font-weight:600;
+	color: yellow;
+}
+
+.nav {
+}
+</style>
+<body>
+	<header class="navContainer">
+ 	<div class="logo">Logo</div>
+ 	<nav class="nav">
+ 		<ul >
+ 			<li>HOME</li>
+ 			<li>PRODUCT</li>
+ 		</ul>
+ 	</nav>
+ </header>
+</body>
+</html>

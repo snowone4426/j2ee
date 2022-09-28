@@ -1,0 +1,17 @@
+<style>
+</style>
+<% 
+boolean isLogin = false;
+String loginId = "";
+String loginPassword = "";
+%>
+<header>
+<div>Logo</div>
+<nav>
+<ul>
+<% if(isLogin == true) %>
+<li>
+</li>
+</ul>
+</nav>
+</header>

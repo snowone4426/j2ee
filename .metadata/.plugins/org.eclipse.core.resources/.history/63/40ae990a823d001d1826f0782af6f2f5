@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<style>
+header {
+display:flex;
+}
+nav ul li {
+cursor:pointer;
+}
+ul {
+display:flex;
+list-style:none;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+</style>
+<% 
+boolean isLogin = false;
+String loginId = "";
+String loginPassword = "";
+%>
+<header>
+<a href="/Aloha/miniProject/main.jsp" class="logo">Logo</a>
+<nav>
+<ul>
+<% if(isLogin == true) {%> 
+<li>
+로그아웃
+</li>
+<li>마이페이지</li>
+<%} else { %>
+<li><a href="/Aloha/miniProject/login.jsp">login</a></li>
+<%} %>
+</ul>
+</nav>
+</header>

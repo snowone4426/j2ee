@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+</head>
+<body>
+<%! 
+String id = "qwe";
+String ps = "asd";
+%>
+<% if(request.getParameter("id") == id && request.getParameter("ps") == ps ){
+	out.println("success");
+	} else {
+		out.println("fail");
+	};
+%>
+<jsp:forword page="success.jsp" />
+
+</body>
+</html>

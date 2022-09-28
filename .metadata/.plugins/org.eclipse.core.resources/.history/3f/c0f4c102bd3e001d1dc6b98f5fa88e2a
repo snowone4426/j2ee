@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="dto.Product" %>
+<jsp:useBean id="productList" class="dao.ProductRepasitory" scope="session" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="welcome.css" />
+<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<title>상품 상세</title>
+</head>
+<body>
+
+<%@ include file= "menu.jsp" %>
+<main>
+<section>
+상품목록
+</section>
+<section class="body">
+<% 
+String id = request.getParameter("id");
+Product p = productList.getProductById(id);
+%>
+
+<ul>
+	<li>상품명 : <%= p.getPname() %></li>
+	<li><%= p.getDescription() %></li>
+	<li>제조사: <%= p.getManufacturer() %></li>
+	<li>가격  : <%= p.getUnitPrice() %></li>
+	<li>카테고리 : <%= p.getCategory() %></li>
+	<li>재고 : <%= p.getUnitsInstock() %></li>
+	<li>상태 : <%= p.getCondition() %></li>
+</ul>
+<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3><%=p.getPname()%></h3>
+				<p><%=p.getDescription()%>
+				<p><b>상품 코드 : </b><span class="badge badge-danger"> <%=p.getProductId()%></span>
+				<p><b>제조사</b> : <%=p.getManufacturer()%>
+				<p><b>분류</b> : <%=p.getCategory()%>
+				<p><b>재고 수</b> : <%=p.getUnitsInstock()%>
+				<h4><%=p.getUnitPrice()%>원</h4>
+				<p><a href="#" class="btn btn-info"> 상품 주문 &raquo;</a> <a	href="./products.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+</section>
+</main>
+<%@ include file= "footer.jsp" %>
+</body>
+</html>

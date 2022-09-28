@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.signupContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h2 {
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: white;
+}
+
+#regform {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  background-color: cornsilk;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+}
+
+.isVisible {
+}
+
+.isUnVisible {
+  display: none;
+}

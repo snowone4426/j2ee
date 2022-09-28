@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+nav {
+display:flex;
+align-items:center;
+height: 60px;
+font-size: 20px;
+color: white;
+padding-left: 40px;
+background-color: #353A40;
+}
+section:first-child {
+display:flex;
+align-items:center;
+height: 230px;
+font-size: 70px;
+font-weight: 300;
+padding-left: 60px;
+background-color: #ECECF1;
+}
+section:last-child {
+display:flex;
+justify-content: center;
+align-items:center;
+height: 90px;
+color:#252640;
+font-size: 20px;
+border-bottom: 1px solid #EAE8EA;
+margin: 0 30px;
+}
+footer {
+font-size: 13px;
+color:#8D8E91;
+}
+</style>
+<body>
+<nav><% out.println("Home"); %></nav>
+<main>
+<section>
+<% out.println("Welcome to Web Shopping Mall"); %>
+</section>
+<section class="body">
+<% out.println("Welcome to Web Market!"); %>
+</section>
+</main>
+<footer><% out.println("ⓒ WebMarket"); %></footer>
+</body>
+</html>

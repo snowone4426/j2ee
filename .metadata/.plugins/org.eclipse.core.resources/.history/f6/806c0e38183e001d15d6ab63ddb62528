@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<jsp:useBean id="isLogin" class="login.logincheck" />
+<jsp:setProperty name="isLogin" property="*" />
+<jsp:useBean id:"date" class="java.util.Date" />
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<% if(isLogin.isLogin()) { %>
+	<jsp:forward page="success.jsp" />
+<%} else {%>
+<jsp:forward page="fail.jsp" />
+<%} %>
+}
+</body>
+</html>

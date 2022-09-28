@@ -1,0 +1,1 @@
+<footer><% out.println("ⓒ WebMarket"); %></footer>

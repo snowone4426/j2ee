@@ -1,0 +1,28 @@
+package utill;
+
+import java.sql.*;
+
+public class DBUtil {
+	static Connection conn = null;
+	Statement stmt = null;
+
+	static {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			System.out.println("------SQL과 연결------");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	static Connection getConnection(String id, String pw) {
+		try {
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", id, pw);
+			System.out.println("접속여부 : " + !conn.isClosed() + "\n");
+		} catch (SQLException e) {
+			System.out.println("접속 실패");
+			e.printStackTrace();
+		}
+		return conn;
+	}
+}

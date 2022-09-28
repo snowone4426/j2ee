@@ -1,0 +1,8 @@
+<header>
+<nav>
+<ul>
+<li class="nav"><a class="nava" href="/0927/webContent/welcome.jsp">Home</a></li>
+<li class="nav"><a class="nava" href="/0927/webContent/product.jsp">Product</a></li>
+</ul>
+</nav>
+</header>

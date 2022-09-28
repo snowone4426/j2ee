@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<style>
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+.navContainer {
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	height: 10vh;
+	padding: 0 40px;
+	background-color: #353A40;
+}
+.logo{
+	position:relative;
+	font-size: 50px;
+	font-weight:600;
+	color: white;
+}
+.nav {
+	display:flex;
+	font-size: 20px;
+	color: white;
+	list-style:none;
+}
+.nav li {
+	
+}
+</style>
+<body>
+	<header class="navContainer">
+ 	<div class="logo">Logo</div>
+ 	<nav class="nav">
+ 		<ul >
+ 			<li>HOME</li>
+ 			<li>PRODUCT</li>
+ 		</ul>
+ 	</nav>
+ </header>
+</body>
+</html>

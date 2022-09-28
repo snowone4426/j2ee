@@ -1,0 +1,18 @@
+package jdbc;
+
+import java.sql.*;
+import utill.DBUtil;
+
+public class JDBCstudy {
+	Statement stmt;
+	
+	JDBCstudy () {
+		try {
+			stmt = DBUtil.getConnection("scott","tiger").createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+}
