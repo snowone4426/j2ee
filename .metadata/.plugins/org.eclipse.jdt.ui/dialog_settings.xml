@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\folder\driver"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\java1.8\lib"/>
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="completion_proposal_size">
@@ -57,5 +57,11 @@
 	</section>
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="2"/>
+	</section>
+	<section name="JarImportWizard">
+		<item key="org.eclipse.ltk.ui.refactoring.sortRefactorings" value="false"/>
+		<list key="org.eclipse.jdt.ui.refactoring.jarHistory">
+			<item value="C:\java1.8\lib\cos.jar"/>
+		</list>
 	</section>
 </section>

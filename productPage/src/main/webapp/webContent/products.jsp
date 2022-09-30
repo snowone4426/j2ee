@@ -43,11 +43,24 @@ margin: 0 30px;
 padding: 30px 0;
 }
 .productDetail {
+display:flex;
 flex-direction:column;
 align-items:center;
 }
 .productDetail li {
 	width: 400px;
+}
+.productImg {
+	width: 100%;
+}
+
+.main a {
+	position:relative;
+	top: 10px;
+	color : white;
+	border-radius: 5px;
+	padding : 5px;
+	background-color: rgba(0,0,0,0.7);
 }
 </style>
 <body>
@@ -62,6 +75,7 @@ Product p = ProductRepasitory.getInctance().getProductById(id);
 </section>
 <section class="main">
 <ul class='productDetail'>
+<li><img class="productImg" src="./resources/images/<%= p.getProductImage() %>" alt="상품이미지"/></li>
 <li>상품명 : <%= p.getPname() %></li>
 <li><%= p.getDescription() %></li>
 <li>제조사: <%= p.getManufacturer() %></li>

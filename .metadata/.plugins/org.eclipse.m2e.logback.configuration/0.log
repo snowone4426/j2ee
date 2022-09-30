@@ -10,3 +10,19 @@
 2022-09-28 08:42:22,081 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-09-28 09:07:39,953 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-09-28 09:31:57,444 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-29 09:22:37,734 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-29 16:20:07,162 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-29 16:23:01,938 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-29 16:23:39,952 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-29 17:59:36,681 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-30 09:04:18,244 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-30 10:48:12,815 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.9; built: 2022-03-30T16:46:32.527Z; git: a9eaf8d5d73369acf610ce88f850c0d56c4b1113; jvm 17.0.3+7
+2022-09-30 10:48:12,832 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-09-30 10:48:12,853 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@629027c0{/help,null,AVAILABLE}
+2022-09-30 10:48:12,912 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@52938a03{HTTP/1.1, (http/1.1)}{127.0.0.1:55154}
+2022-09-30 10:48:12,948 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@625b40b3{STARTING}[10.0.9,sto=0] @6243299ms
+2022-09-30 13:01:19,151 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@625b40b3{STOPPING}[10.0.9,sto=0]
+2022-09-30 13:01:19,155 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@52938a03{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-09-30 13:01:19,199 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@629027c0{/help,null,STOPPED}
+2022-09-30 13:01:27,952 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-30 14:23:45,742 [main] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\ict05-12\Desktop\jspTest\.git]

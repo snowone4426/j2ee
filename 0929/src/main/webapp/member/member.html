@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  lang="kr">
+<head>
+	<meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>회원 등록</title>
+</head>
+<body>
+		<h2>회원 등록</h2>
+		<form name="#" action="mem_register.jsp" method="post">
+			<ul>
+				<li>
+				<label>회원 아이디 <input type="text" name="memberId"  ></label>
+			</li>
+			<li>
+				<label>회원 이름 <input type="text" name="memberName" ></label>
+			</li>
+			<li>
+				<label>회원 비밀번호 <input type="password" name="memberPw" ></label>
+			</li>
+			<li>
+				<label>회원 주소 <input type="text" name="memberAddress" ></label>
+			</li>
+			<li>
+				<textarea name="comment"></textarea>
+			</li>
+			<li>
+				가입이유
+				<div>
+					<label><input type="checkbox" name="reason" value="다이어트" > 다이어트</label>
+					<label><input type="checkbox" name="reason" value="채력증진" > 체력증진</label>
+					<label><input type="checkbox" name="reason" value="대회출전" > 대회출전</label>
+					<label><input type="checkbox" name="reason" value="바디프로필" > 바디프로필</label>
+				</div>
+			</li>
+			<li>
+					<input type="submit" class="btn btn-primary" value="등록" >
+			</li>
+			</ul>
+		</form>
+</body>
+</html>

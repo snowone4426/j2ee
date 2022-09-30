@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Product implements Serializable {
 	private static final long serialVersionUID= 1L;
-	
+
 	private String productId;
 	private String pname;
 	private Integer unitPrice;
@@ -13,6 +13,7 @@ public class Product implements Serializable {
 	private String category;
 	private long unitsInstock;
 	private String condition; // 신상품 or 중고품 or 재생품
+	private String productImage;
 
 	public Product() {
 		super();
@@ -69,5 +70,11 @@ public class Product implements Serializable {
 	}
 	public void setCondition(String condition) {
 		this.condition = condition;
+	}
+	public String getProductImage() {
+		return productImage;
+	}
+	public void setProductImage(String productImage) {
+		this.productImage = productImage;
 	}
 }

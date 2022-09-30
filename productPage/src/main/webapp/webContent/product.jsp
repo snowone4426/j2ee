@@ -54,6 +54,13 @@ padding: 30px 0;
 .description {
 	font-size: 15px;
 }
+.productList {
+	display:flex;
+	max-width:100%;
+	flex-wrap:wrap;
+	padding: 0 5vw;
+	
+}
 </style>
 <body>
 <%@ include file= "menu.jsp" %>
